@@ -4,28 +4,33 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #f8f7ff;
+    background-color: #e4dfe5;
 }
 .navbar{
-    background-color: #0077b6;
+    background-color: #e4dfe5;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+   /* padding: 10px 20px;*/
 
 }
-.navbar-logo img{
-    height: 50px;
-    width: auto;
-    cursor: pointer;
-    transition: transform 0.3s;
+.navbar-logo {
+    height: 150px;
+    width: 150px;
+    background-image: url(logo2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -40%;
+    
 }
-.navbar-logo{
-    font-size: 1.5rem;
+/*img{
+    width: 100px;
     font-weight: bold;
+    align-items: center;
 
-}
+}*/
 .navbar-menu{
     list-style: none;
     display: flex;
@@ -45,38 +50,53 @@ body{
     border-radius: 5px;
     color:#ffdd57
 }
-.dropdown-menu{
-    display: none;
+.h1{
+    margin-left: 20px;
+    color: #efcf51;
+    border-radius: 100px;
+    padding: auto;
+    
+}
+.template{
+    margin-left: 50%;
+}
+
+
+
+
+.temp {
+    width: 600px;
+    height: 450px;
+    
     position: absolute;
-    top: 100%;
-    left:0;
-    background-color: #444;
-    list-style: none;
-    min-width: 150px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    right: 14%;
+    top: 30%;
 }
-.dropdown-menu li{
-    padding: 5px 10px;
+.p{
+    padding-top:6% ;
+    margin-left: 20px;
+}
 
+.btn {
+    width: 150px;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 20px;
+    margin-top: 12px;
 }
-.dropdown-menu a{
-    padding: 5px 10px;
-    display: block;
-    color: #080708;
-}
-.dropdown-menu a:hover{
-    background-color: #555;
-
-}
-.dropdown:hover .dropdown-menu{
-    display: block;
-}
-@media(max-width: 768px){
-.dropdown-menu{
-    flex-direction: column;
-    gap: 10px;
-}
-}
+.btn button{
+    width: 100px;
+    height: 50px;
+    /* padding: 2%; */
+    /* margin-left: 30px; */
+    background-color: #efcf51;
+    border: none;
+    /* border-radius: 15%; */
+    cursor: pointer;
+    /* border: 2px; */
+    /* border: #080708; */
 
 }
